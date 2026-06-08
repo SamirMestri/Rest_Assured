@@ -50,6 +50,26 @@ public class Body {
                 "}";
         }
 
+        public static String AddBook(String isbn, String aisle , String author)
+
+    {
+        return "{\n" +
+                "    \"name\": \"Learn Appium Automation with Java\",\n" +
+                "    \"isbn\": \""+isbn+"\",\n" +
+                "    \"aisle\": \""+aisle+"\",\n" +
+                "    \"author\": \""+author+"\"\n" +
+                "}";
+    }
+
+
+    public static String AddDelete(String ID)
+
+    {
+        return "{\n" +
+                "    \"ID\": \""+ID+"\"\n" +
+                "}";
+    }
+
 }
 
 
