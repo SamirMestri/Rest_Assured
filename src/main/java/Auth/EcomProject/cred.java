@@ -1,4 +1,4 @@
-package pojo;
+package Auth.EcomProject;
 
 public class cred {
 
