@@ -17,6 +17,7 @@ import pojo.Addplace;
 import pojo.location;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,9 +32,8 @@ public class StepDefination extends Utility {
     TestDataBuild testdata= new TestDataBuild();
 
     @Given("Add Place Payload")
-    public void add_palce_payload() throws FileNotFoundException {
+    public void add_place_payload() throws IOException {
         // Write code here that turns the phrase above into concrete actions
-
         giv=given().spec(RequestSpecification()).body(testdata.AddPlacePayload());
     }
     @When("user calls {string} with {string} http request")
