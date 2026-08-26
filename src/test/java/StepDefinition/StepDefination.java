@@ -34,7 +34,7 @@ public class StepDefination extends Utility {
     @Given("Add Place Payload with {string} {string} {string} {string}")
     public void add_place_payload_with(String Name, String Language, String Phone_number, String Website) throws IOException {
         // Write code here that turns the phrase above into concrete actions
-        giv=given().spec(RequestSpecification()).body(testdata.AddPlacePayload(Name,Language,Phone_number,Website));
+        giv=given().spec(requestSpecification()).body(testdata.AddPlacePayload(Name,Language,Phone_number,Website));
     }
     @When("user calls {string} with {string} http request")
     public void user_calls_with_http_request(String string, String string2) {

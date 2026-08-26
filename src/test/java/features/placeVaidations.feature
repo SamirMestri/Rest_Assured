@@ -8,5 +8,6 @@ Feature: Validating Place API's
     And "scope" in response body is "APP"
 
     Examples:
-      | Name  | Language | Phone_number | Website       |
-      | Samir | Marathi  | 9370088496   | www.samir.com |
+      | Name   | Language | Phone_number | Website        |  |
+      | Samir  | Marathi  | 9370088496   | www.samir.com  |  |
+      | Sayali | English  | 8356020253   | www.sayali.com |  |
