@@ -3,19 +3,20 @@ package Resourses;
 import pojo.Addplace;
 import pojo.location;
 
+import javax.naming.Name;
 import java.util.ArrayList;
 import java.util.List;
 
 public class TestDataBuild {
 
-    public Addplace AddPlacePayload(){
+    public Addplace AddPlacePayload(String Name,String Language,String Phone_number,String Website){
 
         Addplace a = new Addplace();
         a.setAddress("29, side layout, cohen 09");
-        a.setName("Frontline house");
-        a.setPhone_number("(+91) 983 893 3937");
-        a.setWebsite("http://google.com");
-        a.setLanguage("French-IN");
+        a.setName(Name);
+        a.setPhone_number(Phone_number);
+        a.setWebsite(Website);
+        a.setLanguage(Language);
         a.setAccuracy(50);
 
         location b = new location();
